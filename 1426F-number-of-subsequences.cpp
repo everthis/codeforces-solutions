@@ -90,7 +90,7 @@ int main() {
   int n;
   string s;
   cin >> n >> s;
-  int a = 0, ab = 0, abc = 0, m = 1;
+  int a = 0, ab = 0, abc = 0, m = 1; // m is total number of different strings so far.
   for (char c : s) {
     if (c == 'a') {
       a = (a + m) % mod;
