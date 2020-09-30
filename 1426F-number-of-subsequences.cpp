@@ -49,6 +49,11 @@ int mul(int x, int y) { return (x * 1ll * y) % MOD; }
 
 int n;
 string s;
+
+/*
+the number of subsequences of 𝑠 that end up in position not later than 𝑖,
+match 𝑗 first characters of abc and contain 𝑘 question marks.
+/**/
 int dp[N][K][K];
 char buf[N];
 int pow3[N];
