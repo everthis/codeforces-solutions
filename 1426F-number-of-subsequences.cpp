@@ -1,3 +1,35 @@
+/*  
+You are given a string 𝑠 consisting of lowercase Latin letters
+"a", "b" and "c" and question marks "?".
+
+Let the number of question marks in the string 𝑠 be 𝑘. Let's replace each
+question mark with one of the letters "a", "b" and "c". Here we can obtain
+all 3𝑘 possible strings consisting only of letters "a", "b" and "c".
+For example, if 𝑠="ac?b?c" then we can obtain the following strings:
+["acabac", "acabbc", "acabcc", "acbbac", "acbbbc", "acbbcc",
+"accbac", "accbbc", "accbcc"].
+
+Your task is to count the total number of subsequences "abc" in all resulting
+strings. Since the answer can be very large, print it modulo 109+7.
+
+A subsequence of the string 𝑡 is such a sequence that can be derived from the
+string 𝑡 after removing some (possibly, zero) number of letters without
+changing the order of remaining letters. For example, the string "baacbc"
+contains two subsequences "abc" — a subsequence consisting of letters at
+positions (2,5,6) and a subsequence consisting of letters at positions (3,5,6).
+
+Input
+The first line of the input contains one integer 𝑛 (3≤𝑛≤200000) — the
+length of 𝑠.
+
+The second line of the input contains the string 𝑠 of length 𝑛 consisting
+of lowercase Latin letters "a", "b" and "c" and question marks"?".
+
+Output
+Print the total number of subsequences "abc" in all strings you can obtain
+if you replace all question marks with letters "a", "b" and "c", modulo 109+7.
+/**/
+
 #include <bits/stdc++.h>
 
 using namespace std;
